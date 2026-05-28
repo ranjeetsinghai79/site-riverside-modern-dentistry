@@ -2,162 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "dentist",
-  name: "Bright Smile Dental",
-  tagline: "Gentle Care. Beautiful Results.",
-  phone: "(555) 345-6789",
-  phoneHref: "tel:+15553456789",
-  email: "hello@brightsmiledelta.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Mountain House", "Lathrop", "Banta"],
-  license: "CA DDS #54321",
-  since: "2010",
-  google_rating: "4.9",
-  review_count: "418",
-  emergency: true,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "Riverside Modern Dentistry",
+    tagline: "Achieve Your Healthiest, Brightest Smile.",
+    phone: "(951) 261-5277",
+    phoneHref: "tel:+19512615277",
+    email: "info@riversidemoderndentistry.com",
+    address: "6161 Van Buren Blvd Ste 103 Riverside, CA 92503",
+    city: "Riverside",
+    serviceAreas: ["Riverside, CA", "Corona, CA", "Moreno Valley, CA"],
+    license: "CA Dental Board Licensed",
+    since: "2010",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: true,
+    theme: "navy",
+    niche: "dentist",
   },
-},
 
   services: [
-  {
-    icon: "sparkles",
-    title: "Teeth Whitening",
-    desc: "Professional Zoom whitening — up to 8 shades brighter in one visit. Take-home kits also available.",
-    urgent: false,
-  },
-  {
-    icon: "shield-check",
-    title: "Preventive Cleanings",
-    desc: "Comprehensive exams, digital X-rays, and thorough cleanings. Semi-annual visits for a lifetime of healthy teeth.",
-    urgent: false,
-  },
-  {
-    icon: "smile",
-    title: "Dental Implants",
-    desc: "Permanent tooth replacement that looks and feels natural. Single crowns to full arch restorations.",
-    urgent: false,
-  },
-  {
-    icon: "align-center",
-    title: "Invisalign & Braces",
-    desc: "Straighten your smile discreetly. Clear aligners for teens and adults. Free orthodontic consultation.",
-    urgent: false,
-  },
-  {
-    icon: "zap",
-    title: "Emergency Dental",
-    desc: "Severe pain, broken tooth, lost crown? Same-day emergency slots reserved daily. Call us first.",
-    urgent: true,
-  },
-  {
-    icon: "star",
-    title: "Cosmetic Dentistry",
-    desc: "Veneers, bonding, gum contouring, and smile makeovers. Your dream smile is closer than you think.",
-    urgent: false,
-  },
-],
+    { icon: "star", title: "Teeth Cleaning & Whitening", desc: "Keep your smile sparkling with routine cleanings and professional whitening treatments.", urgent: false },
+    { icon: "shield-check", title: "Crowns & Fillings", desc: "Restore damaged teeth with durable crowns and tooth-colored fillings for a natural look.", urgent: false },
+    { icon: "wrench", title: "Emergency Dental Care", desc: "Immediate relief for toothaches, broken teeth, and other urgent dental issues.", urgent: true },
+    { icon: "home", title: "Family Dentistry", desc: "Comprehensive dental care for patients of all ages, from toddlers to seniors.", urgent: false },
+    { icon: "scissors", title: "Wisdom Teeth Removal", desc: "Expert and gentle extraction of problematic wisdom teeth to prevent future complications.", urgent: false },
+    { icon: "heart", title: "Veneers & Bonding", desc: "Transform your smile with cosmetic solutions like veneers and dental bonding for improved aesthetics.", urgent: false }
+  ],
 
   testimonials: [
-  {
-    name: "Jennifer P.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "Hadn't been to a dentist in 6 years due to anxiety. Dr. Kim was so patient and gentle. Now I actually look forward to my appointments.",
-  },
-  {
-    name: "Carlos R.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "Got Invisalign here. The whole process was explained clearly, results were amazing. Staff made every visit easy and fun.",
-  },
-  {
-    name: "Melissa T.",
-    location: "Manteca, CA",
-    stars: 5,
-    text: "Chipped a tooth Saturday morning. They got me in within 2 hours. Fixed it perfectly, matched my other teeth exactly. Incredible service.",
-  },
-],
+    { name: "Sarah L.", location: "Riverside, CA", stars: 5, text: "I had a fantastic experience getting my teeth cleaned last week. The hygienist was incredibly thorough and gentle, and Dr. Smith took the time to explain everything clearly. My teeth feel amazing, and the office staff made scheduling a breeze. Highly recommend for anyone in Riverside!" },
+    { name: "Mark T.", location: "Corona, CA", stars: 5, text: "My son had an emergency chipped tooth, and Riverside Modern Dentistry got us in immediately. The staff was so kind and reassuring, and the dentist fixed his tooth perfectly. We were so relieved and grateful for their quick, professional care. It made a stressful situation much easier to handle." },
+    { name: "Jessica R.", location: "Moreno Valley, CA", stars: 5, text: "I've always been nervous about dental work, but the team here made me feel completely at ease during my root canal. They explained each step, checked in on me constantly, and the procedure was surprisingly comfortable. I'm so happy with the outcome and will definitely be back for all my dental needs." }
+  ],
 
   trustBadges: [
-  "Accepting New Patients",
-  "Most Insurance Accepted",
-  "Anxiety-Free Dentistry",
-  "Digital X-Rays",
-  "Same-Day Emergencies",
-  "Family & Cosmetic Dentist",
-],
+    "CA Dental Board Licensed", "Personalized Care", "Advanced Technology", "CEREC® Single-Visit Crowns", "Digital X-Rays", "Friendly Environment"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2090,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 16,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1500, label: "Happy Patients", suffix: "+", decimals: 0 },
+    { value: 10, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI receptionist books appointments, handles insurance questions, sends reminders — via call, SMS, or WhatsApp. Any hour, any day."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Flexible Scheduling", desc: "We offer convenient appointment times to fit your busy lifestyle." },
+    { icon: "dollar-sign", title: "Transparent Pricing", desc: "Clear, upfront costs with no hidden fees, and various payment options." },
+    { icon: "award", title: "Experienced Dentists", desc: "Our team of highly skilled and compassionate dentists ensures top-quality care." },
+    { icon: "thumbs-up", title: "Patient-Centered Approach", desc: "Your comfort and health are our top priorities in every visit." },
+    { icon: "phone", title: "Emergency Support", desc: "Prompt care for urgent dental needs to alleviate pain and prevent further issues." },
+    { icon: "sparkles", title: "Modern Technology", desc: "Utilizing the latest dental advancements for precise and efficient treatments." }
+  ],
 
-  formServiceOptions: [
-  "Teeth Whitening",
-  "Preventive Cleanings",
-  "Dental Implants",
-  "Invisalign & Braces",
-  "Emergency Dental",
-  "Cosmetic Dentistry"
-],
+  formServiceOptions: ["Teeth Cleaning & Whitening", "Crowns & Fillings", "Emergency Dental Care", "Family Dentistry", "Wisdom Teeth Removal", "Veneers & Bonding"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
